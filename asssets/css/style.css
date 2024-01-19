@@ -16,31 +16,56 @@
 
 .site_header{
     background-color: var(--header_background);
-}
-
-.header{
     background-image: url(../img/jumbo.png);
+    background-size:cover;
     background-repeat: no-repeat;
 }
 
-.logo{
- 
+.header{
+    text-align: center;
+}
+
+.colum{
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.star{
+    background-image: url(../img/stars.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.nav{
+background-color: var(--header_background); 
 }
 
 ul{
+    justify-content: center;
     list-style: none;
     display: flex;
+    flex-grow: 3;
+    gap: 0.5rem;
+}
+
+.flx-grow{
+    flex-grow: 1;
 }
 
 .button{
-    border-radius: 25%;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    margin: 1.5rem;
 }
 
 .img{
     width: 60%;
 }
 
-
+.bg-grey{
+    background-color: var(--bool-light);
+}
 
 .container_small{
     width: 40%;
